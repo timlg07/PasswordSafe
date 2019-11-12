@@ -34,7 +34,12 @@
             
             $outputArray = [];
             
-            
+            for( $i=0; $i<$inpLen; ){
+                for( $j=0; $j<$keyLen && $i<$inpLen; $j++, $i++ ){
+                    $xor = ord( $inpArr[$i] ) ^ ord( $keyArr[$j] );
+                    array_push( $outputArray,decbin( $xor ));
+                }
+            }
             
             return $outputArray;
         }
