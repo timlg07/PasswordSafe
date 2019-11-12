@@ -14,6 +14,15 @@
             }
             return $bin;
         }
+        
+        public static function bin2str( $binaryArray )
+        {
+            $string = "";
+            foreach( $binaryArray as $bin ){
+                $string .= chr(bindec( $bin ));
+            }
+            return $string;
+        }
     }
 
 ?>
