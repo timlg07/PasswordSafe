@@ -23,6 +23,21 @@
             }
             return $string;
         }
+        
+        public static function str2bin_xor( $input, $key )
+        {
+            $inpArr = str_split( $input );
+            $keyArr = str_split( $key   );
+            
+            $inpLen = count( $inpArr );
+            $keyLen = count( $keyArr );
+            
+            $outputArray = [];
+            
+            
+            
+            return $outputArray;
+        }
     }
 
 ?>
