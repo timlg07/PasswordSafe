@@ -43,6 +43,25 @@
             
             return $outputArray;
         }
+        
+        public static function bin2str_xor( $binArr, $key )
+        {
+            $keyArr = str_split( $key );
+            $binLen = count( $binArr  );
+            $keyLen = count( $keyArr  );
+            
+            $outputString = "";
+            
+            for( $i=0; $i<$binLen; ){
+                for( $j=0; $j<$keyLen && $i<$binLen; $j++, $i++ ){
+                    $xor = bindec( $binArr[$i] ) ^ ord( $keyArr[$j] );
+                    $outputString .= chr( $xor );
+                }
+            }
+            
+            return $outputString;
+        }
+        
     }
 
 ?>
