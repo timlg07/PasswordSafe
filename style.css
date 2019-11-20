@@ -1,0 +1,35 @@
+:root {
+    font-family: Arial;
+}
+form, #output {
+    margin: 5px 1%;
+    box-sizing: border-box;
+    float: left;
+}
+#output {
+    font-family: monospace;
+    font-size: 111%;
+    margin-top: 10px;
+}
+form {
+    width: 98%;
+    max-width: 420px;
+}
+
+#send {
+    border: 2px solid #0B6; 
+    border-radius: 7px;
+    padding: 10px;
+    background: #dfe;
+    color: #0B6;
+}
+#send:hover {
+    background: #0B6;
+    color: #fff;
+    cursor: pointer;
+}
+#send, #input {
+    margin: 5px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
